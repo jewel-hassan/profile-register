@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("deer.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.im-content {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.container {
+    width: 50%;
+    color: #fff;
+    line-height: 2.5rem;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+.error {
+    color: red;
+}
+
+.toast {
+    background-color: rgba(10, 122, 10, 0.856);
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    color: white;
+    border-radius: .4rem;
+    display: none;
+    width: 20%;
+}
+
+input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: .2rem solid #fff;
+    color: #fff;
+}
+
+input[type="file"]::file-selector-button {
+    border: .2rem solid #fff;
+    border-bottom: none;
+    outline: none;
+    padding: .5rem;
+    border-radius: .2rem;
+    background: transparent;
+    color: #fff;
+
+}
+
+input[type="file"] {
+    border: none;
+    border-bottom: .2rem solid #fff;
+}
+
+.btn-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-button a {
+    text-decoration: none;
+}
+
+.data-title {
+    border: .2rem solid #fff;
+    color: #fff;
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: .5rem 1rem;
+    color: #fff;
+    font-weight: 400;
+    border: .2rem solid #fff;
+    border-radius: 2rem;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    text-align: center;
+}

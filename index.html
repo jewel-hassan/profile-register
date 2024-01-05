@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE FONT LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Form Validation and Save JSON</title>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Profile Information</h1>
+        <form id="profileForm" onsubmit="validateForm(event)">
+            <div class="im-content">
+                <img id="imagePreview" src="profile.png" alt="Preview">
+            </div>
+
+            <div>
+                <input type="file" id="profileImage" accept="image/*" onchange="previewImage()">
+            </div>
+
+            <div>
+                <div>
+                    <label for="username">Username:</label>
+                </div>
+
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <span id="usernameError" class="error"></span>
+
+            <div>
+                <div>
+                    <label for="email">Email:</label>
+                </div>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <span id="emailError" class="error"></span><br>
+
+            <div class="btn-button">
+                <button type="submit" value="Submit">Submit</button>
+                <a id="downloadLink" style="display: none;" download="data.json">
+                    <span class="data-title"></span>Data Save</span>
+                </a>
+            </div>
+            
+
+        </form>
+        <div id="toast" class="toast"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
